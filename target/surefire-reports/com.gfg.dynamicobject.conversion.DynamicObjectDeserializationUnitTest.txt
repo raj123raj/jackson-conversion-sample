@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.gfg.dynamicobject.conversion.DynamicObjectDeserializationUnitTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.375 s <<< FAILURE! - in com.gfg.dynamicobject.conversion.DynamicObjectDeserializationUnitTest
+givenJsonString_whenParsingWithJsonAnySetter_thenItMustContainDynamicProperties  Time elapsed: 0.025 s  <<< ERROR!
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
+Unrecognized field "displayAspectRatio" (class com.gfg.dynamicobject.conversion.OnlineShoppingProduct), not marked as ignorable (3 known properties: "productName", "productDetails", "productCategory"])
+ at [Source: (String)"{
+    "productName": "Pear yPhone 72",
+    "productCategory": "cellphone",
+    "displayAspectRatio": 97:3,
+    "audioConnector": "none"
+}"; line: 4, column: 29] (through reference chain: com.gfg.dynamicobject.conversion.OnlineShoppingProduct["displayAspectRatio"])
+	at com.gfg.dynamicobject.conversion.DynamicObjectDeserializationUnitTest.givenJsonString_whenParsingWithJsonAnySetter_thenItMustContainDynamicProperties(DynamicObjectDeserializationUnitTest.java:65)
+
